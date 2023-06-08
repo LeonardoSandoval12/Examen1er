@@ -1,0 +1,53 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+    float segundoT;
+    float minutos = 60;
+    float minutosT;
+    float horas = 60 ;
+    float horasT;
+    float segundos; 
+    float segundosT;
+    
+    cout<<"Segundos: "<<endl;
+    cin>>segundos;
+    
+    segundosT = segundos/60/60;
+    
+    minutosT = segundos/minutos;
+    
+    horasT = minutosT/horas;
+    
+    
+    if(segundosT <= 1)
+    {
+        segundosT = 1;
+    }
+    if(minutosT <= 60.9)
+    {
+        minutosT = 0;
+    }
+    
+    if(minutosT <= 60.9)
+    {
+        horasT = 1;
+    }
+    cout<<"La hora es: "<<horasT<<" : "<<minutosT<< " : "<<segundosT;
+    
+    
+    
+
+    return 0;
+}
